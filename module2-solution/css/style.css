@@ -1,10 +1,57 @@
 /* Base style */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    background-color: burlywood;
+div #container {
+    position: relative;
+    padding: 30px;
+    background-color: white;
+}
+
+#h1 {
+    text-align:center;
+    padding: 30px;
+}
+
+#p1 {
+    width: 70px;
+    height: 25px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    background-color: pink;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+#p2 {
+    width: 70px;
+    height: 25px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    background-color: brown;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#p3 {
+    width: 70px;
+    height: 25px;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    background-color: palegoldenrod;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+#p-inner {
+    padding: 30px;
+    background-color: grey;
 }
 
 /* Basic responsive design */
@@ -16,6 +63,8 @@ p {
 @media (min-width: 992px) {
     .ld-col-1, .ld-col-2, .ld-col-3, .ld-col-4, .ld-col-5, .ld-col-6, .ld-col-7, .ld-col-8, .ld-col-9, .ld-col-10, .ld-col-11, .ld-col-12 {
         float: left;
+        background-color: grey;
+        margin: 30;
     }
     .ld-col-1 {
         width: 8.33%;
@@ -55,10 +104,11 @@ p {
     }
 }
 
-/* Large devices */
+/* Medium devices */
 @media (min-width: 768px) and (max-width: 991px) {
     .md-col-1, .md-col-2, .md-col-3, .md-col-4, .md-col-5, .md-col-6, .md-col-7, .md-col-8, .md-col-9, .md-col-10, .md-col-11, .md-col-12 {
         float: left;
+        background-color: pink;
     }
     .md-col-1 {
         width: 8.33%;
@@ -98,10 +148,11 @@ p {
     }
 }
 
-/* Large devices */
-@media (min-width: 992px) {
+/* Small devices */
+@media (max-width: 767px) {
     .sd-col-1, .sd-col-2, .sd-col-3, .sd-col-4, .sd-col-5, .sd-col-6, .sd-col-7, .sd-col-8, .sd-col-9, .sd-col-10, .sd-col-11, .sd-col-12 {
         float: left;
+        background-color: violet;
     }
     .sd-col-1 {
         width: 8.33%;
