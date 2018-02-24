@@ -1,0 +1,17 @@
+/* BODY */
+#header-nav {
+    background-color: bisque;
+    color: black;
+}
+
+/* HEADER */
+#header-nav {
+    background-color: grey;
+    color: black;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid black;
+  }
